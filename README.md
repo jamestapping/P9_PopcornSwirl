@@ -9,5 +9,6 @@ Tech: Collection View / TableViews / Coredata / GoogleAdmob / MVC / ITunes webse
 The app displays a list of the latest films for the current year. The user can bookmark a film or add it to a watched list.
 A note can be added to the film. This is stored in Core Data.
 
-![PopcornSwirl](https://user-images.githubusercontent.com/68062208/127656058-c6fbf7b4-e0d0-4589-8d83-798a2da472f3.gif)
+
+![PopcornSwirl](https://user-images.githubusercontent.com/68062208/127656545-8577f6d8-5154-4538-b022-45d8b5831b7f.gif)
 
