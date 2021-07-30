@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E3FAD9E0FCB0D7D6301F56F /* Pods_Popcorn_Swirl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E16191B0EC89EF23BD9404 /* Pods_Popcorn_Swirl.framework */; };
+		7D51CFAB26B2A20800EDAA33 /* FilmDetailAdmobCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D51CFAA26B2A20800EDAA33 /* FilmDetailAdmobCell.swift */; };
+		7D655798268B1B0900436B80 /* FilmDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D655797268B1B0900436B80 /* FilmDetailViewController.swift */; };
+		7D7791C32681D45C00174C90 /* FilmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7791C22681D45C00174C90 /* FilmsViewController.swift */; };
+		7D7791CB2683108400174C90 /* FilmListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7791CA2683108400174C90 /* FilmListData.swift */; };
+		7D7791CD268310A900174C90 /* FilmListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7791CC268310A900174C90 /* FilmListModel.swift */; };
+		7D7791CF2683138800174C90 /* FilmListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7791CE2683138800174C90 /* FilmListManager.swift */; };
+		7D7791D92683685800174C90 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7791D82683685800174C90 /* DataManager.swift */; };
+		7D7791DC26836EEE00174C90 /* FilmCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7791DB26836EEE00174C90 /* FilmCollectionViewCell.swift */; };
+		7D80382726A82DB4002B19AB /* Film+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D80382526A82DB4002B19AB /* Film+CoreDataClass.swift */; };
+		7D80382826A82DB4002B19AB /* Film+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D80382626A82DB4002B19AB /* Film+CoreDataProperties.swift */; };
+		7D9ED4A326B1419200A727A7 /* NoteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9ED4A226B1419200A727A7 /* NoteButton.swift */; };
+		7DACAB062684A6D2002C6342 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DACAB052684A6D2002C6342 /* ImageService.swift */; };
+		7DB7EA5126A4060C007F44D0 /* ChosenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB7EA5026A4060C007F44D0 /* ChosenTableViewCell.swift */; };
+		7DBC194E268C8387006B816A /* FilmDetailArtworkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBC194D268C8387006B816A /* FilmDetailArtworkCell.swift */; };
+		7DBC1950268CB067006B816A /* JBKenBurnsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBC194F268CB067006B816A /* JBKenBurnsView.swift */; };
+		7DBC1952268CC6E0006B816A /* FilmDetailInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBC1951268CC6E0006B816A /* FilmDetailInfoCell.swift */; };
+		7DBC702826A5C079009CC70E /* ChosenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBC702726A5C078009CC70E /* ChosenTableViewController.swift */; };
+		7DD0D9E2267C96080030731E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD0D9E1267C96080030731E /* AppDelegate.swift */; };
+		7DD0D9E4267C96080030731E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD0D9E3267C96080030731E /* SceneDelegate.swift */; };
+		7DD0D9E9267C96080030731E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DD0D9E7267C96080030731E /* Main.storyboard */; };
+		7DD0D9EC267C96080030731E /* Popcorn_Swirl.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7DD0D9EA267C96080030731E /* Popcorn_Swirl.xcdatamodeld */; };
+		7DD0D9EE267C960B0030731E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DD0D9ED267C960B0030731E /* Assets.xcassets */; };
+		7DD0D9F1267C960B0030731E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DD0D9EF267C960B0030731E /* LaunchScreen.storyboard */; };
+		7DEA0D2126A628160030D26D /* DisplayFilms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEA0D2026A628160030D26D /* DisplayFilms.swift */; };
+		7DF3DE032693525700AF1B79 /* Date + FormattedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3DE022693525700AF1B79 /* Date + FormattedString.swift */; };
+		7DF3DE07269440D500AF1B79 /* FilmDetailButtonsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3DE06269440D500AF1B79 /* FilmDetailButtonsCell.swift */; };
+		7DF3DE092694828500AF1B79 /* EyeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3DE082694828500AF1B79 /* EyeButton.swift */; };
+		7DF3DE0B26948A4300AF1B79 /* BookmarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3DE0A26948A4300AF1B79 /* BookmarkButton.swift */; };
+		7DF3DE112696FE0400AF1B79 /* TmpFilm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3DE102696FE0400AF1B79 /* TmpFilm.swift */; };
+		7DF59F4626B03BD5004227A5 /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF59F4526B03BD5004227A5 /* AddNoteViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		05E16191B0EC89EF23BD9404 /* Pods_Popcorn_Swirl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Popcorn_Swirl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		211C268AC506566415108F98 /* Pods-Popcorn Swirl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Popcorn Swirl.debug.xcconfig"; path = "Target Support Files/Pods-Popcorn Swirl/Pods-Popcorn Swirl.debug.xcconfig"; sourceTree = "<group>"; };
+		7D51CFAA26B2A20800EDAA33 /* FilmDetailAdmobCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailAdmobCell.swift; sourceTree = "<group>"; };
+		7D655797268B1B0900436B80 /* FilmDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailViewController.swift; sourceTree = "<group>"; };
+		7D7791C22681D45C00174C90 /* FilmsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsViewController.swift; sourceTree = "<group>"; };
+		7D7791CA2683108400174C90 /* FilmListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmListData.swift; sourceTree = "<group>"; };
+		7D7791CC268310A900174C90 /* FilmListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmListModel.swift; sourceTree = "<group>"; };
+		7D7791CE2683138800174C90 /* FilmListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmListManager.swift; sourceTree = "<group>"; };
+		7D7791D82683685800174C90 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		7D7791DB26836EEE00174C90 /* FilmCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmCollectionViewCell.swift; sourceTree = "<group>"; };
+		7D80382526A82DB4002B19AB /* Film+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Film+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7D80382626A82DB4002B19AB /* Film+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Film+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7D9ED4A226B1419200A727A7 /* NoteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteButton.swift; sourceTree = "<group>"; };
+		7DACAB052684A6D2002C6342 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		7DB7EA5026A4060C007F44D0 /* ChosenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenTableViewCell.swift; sourceTree = "<group>"; };
+		7DBC194D268C8387006B816A /* FilmDetailArtworkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailArtworkCell.swift; sourceTree = "<group>"; };
+		7DBC194F268CB067006B816A /* JBKenBurnsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JBKenBurnsView.swift; sourceTree = "<group>"; };
+		7DBC1951268CC6E0006B816A /* FilmDetailInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailInfoCell.swift; sourceTree = "<group>"; };
+		7DBC702726A5C078009CC70E /* ChosenTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenTableViewController.swift; sourceTree = "<group>"; };
+		7DD0D9DE267C96080030731E /* Popcorn Swirl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Popcorn Swirl.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DD0D9E1267C96080030731E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7DD0D9E3267C96080030731E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7DD0D9E8267C96080030731E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7DD0D9EB267C96080030731E /* Popcorn_Swirl.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Popcorn_Swirl.xcdatamodel; sourceTree = "<group>"; };
+		7DD0D9ED267C960B0030731E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7DD0D9F0267C960B0030731E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7DD0D9F2267C960B0030731E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DEA0D2026A628160030D26D /* DisplayFilms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayFilms.swift; sourceTree = "<group>"; };
+		7DF3DE022693525700AF1B79 /* Date + FormattedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + FormattedString.swift"; sourceTree = "<group>"; };
+		7DF3DE06269440D500AF1B79 /* FilmDetailButtonsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailButtonsCell.swift; sourceTree = "<group>"; };
+		7DF3DE082694828500AF1B79 /* EyeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeButton.swift; sourceTree = "<group>"; };
+		7DF3DE0A26948A4300AF1B79 /* BookmarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkButton.swift; sourceTree = "<group>"; };
+		7DF3DE102696FE0400AF1B79 /* TmpFilm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TmpFilm.swift; sourceTree = "<group>"; };
+		7DF59F4526B03BD5004227A5 /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
+		BB2754E4DC7B55326FF2F609 /* Pods-Popcorn Swirl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Popcorn Swirl.release.xcconfig"; path = "Target Support Files/Pods-Popcorn Swirl/Pods-Popcorn Swirl.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7DD0D9DB267C96080030731E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E3FAD9E0FCB0D7D6301F56F /* Pods_Popcorn_Swirl.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CFE4BC8CA8C57D3EA414755 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05E16191B0EC89EF23BD9404 /* Pods_Popcorn_Swirl.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D7791C826830D0600174C90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7D80382526A82DB4002B19AB /* Film+CoreDataClass.swift */,
+				7D80382626A82DB4002B19AB /* Film+CoreDataProperties.swift */,
+				7D7791D82683685800174C90 /* DataManager.swift */,
+				7D7791CC268310A900174C90 /* FilmListModel.swift */,
+				7D7791CA2683108400174C90 /* FilmListData.swift */,
+				7D7791CE2683138800174C90 /* FilmListManager.swift */,
+				7DF3DE102696FE0400AF1B79 /* TmpFilm.swift */,
+				7DEA0D2026A628160030D26D /* DisplayFilms.swift */,
+				7DD0D9EA267C96080030731E /* Popcorn_Swirl.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7D7791C926830D3700174C90 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7D7791C22681D45C00174C90 /* FilmsViewController.swift */,
+				7D655797268B1B0900436B80 /* FilmDetailViewController.swift */,
+				7DBC702726A5C078009CC70E /* ChosenTableViewController.swift */,
+				7DF59F4526B03BD5004227A5 /* AddNoteViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7D7791DA2683687A00174C90 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7D7791C926830D3700174C90 /* Controllers */,
+				7D7791DD26836F0600174C90 /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7D7791DD26836F0600174C90 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7D7791DB26836EEE00174C90 /* FilmCollectionViewCell.swift */,
+				7DBC194D268C8387006B816A /* FilmDetailArtworkCell.swift */,
+				7DBC1951268CC6E0006B816A /* FilmDetailInfoCell.swift */,
+				7D51CFAA26B2A20800EDAA33 /* FilmDetailAdmobCell.swift */,
+				7DF3DE06269440D500AF1B79 /* FilmDetailButtonsCell.swift */,
+				7DB7EA5026A4060C007F44D0 /* ChosenTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		7D7791DE2684A55F00174C90 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7DF3DE022693525700AF1B79 /* Date + FormattedString.swift */,
+				7DBC194F268CB067006B816A /* JBKenBurnsView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7DACAB042684A6A3002C6342 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7DACAB052684A6D2002C6342 /* ImageService.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7DD0D9D5267C96080030731E = {
+			isa = PBXGroup;
+			children = (
+				7DD0D9E0267C96080030731E /* Popcorn Swirl */,
+				7DD0D9DF267C96080030731E /* Products */,
+				9BFC165D1BD62A94633307DE /* Pods */,
+				2CFE4BC8CA8C57D3EA414755 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7DD0D9DF267C96080030731E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7DD0D9DE267C96080030731E /* Popcorn Swirl.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DD0D9E0267C96080030731E /* Popcorn Swirl */ = {
+			isa = PBXGroup;
+			children = (
+				7D7791C826830D0600174C90 /* Model */,
+				7D7791DA2683687A00174C90 /* View */,
+				7D7791DE2684A55F00174C90 /* Extensions */,
+				7DF59F4726B03CB4004227A5 /* SubClasses */,
+				7DACAB042684A6A3002C6342 /* Helpers */,
+				7DD0D9E1267C96080030731E /* AppDelegate.swift */,
+				7DD0D9E3267C96080030731E /* SceneDelegate.swift */,
+				7DD0D9ED267C960B0030731E /* Assets.xcassets */,
+				7DD0D9EF267C960B0030731E /* LaunchScreen.storyboard */,
+				7DD0D9E7267C96080030731E /* Main.storyboard */,
+				7DD0D9F2267C960B0030731E /* Info.plist */,
+			);
+			path = "Popcorn Swirl";
+			sourceTree = "<group>";
+		};
+		7DF59F4726B03CB4004227A5 /* SubClasses */ = {
+			isa = PBXGroup;
+			children = (
+				7DF3DE0A26948A4300AF1B79 /* BookmarkButton.swift */,
+				7DF3DE082694828500AF1B79 /* EyeButton.swift */,
+				7D9ED4A226B1419200A727A7 /* NoteButton.swift */,
+			);
+			path = SubClasses;
+			sourceTree = "<group>";
+		};
+		9BFC165D1BD62A94633307DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				211C268AC506566415108F98 /* Pods-Popcorn Swirl.debug.xcconfig */,
+				BB2754E4DC7B55326FF2F609 /* Pods-Popcorn Swirl.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7DD0D9DD267C96080030731E /* Popcorn Swirl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DD0D9F5267C960B0030731E /* Build configuration list for PBXNativeTarget "Popcorn Swirl" */;
+			buildPhases = (
+				9F1644BD37EDEC31B1DA4599 /* [CP] Check Pods Manifest.lock */,
+				7DD0D9DA267C96080030731E /* Sources */,
+				7DD0D9DB267C96080030731E /* Frameworks */,
+				7DD0D9DC267C96080030731E /* Resources */,
+				5E2BF1A82F5F8941C43C0101 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Popcorn Swirl";
+			productName = "Popcorn Swirl";
+			productReference = 7DD0D9DE267C96080030731E /* Popcorn Swirl.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7DD0D9D6267C96080030731E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					7DD0D9DD267C96080030731E = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 7DD0D9D9267C96080030731E /* Build configuration list for PBXProject "Popcorn Swirl" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7DD0D9D5267C96080030731E;
+			productRefGroup = 7DD0D9DF267C96080030731E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7DD0D9DD267C96080030731E /* Popcorn Swirl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7DD0D9DC267C96080030731E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DD0D9F1267C960B0030731E /* LaunchScreen.storyboard in Resources */,
+				7DD0D9EE267C960B0030731E /* Assets.xcassets in Resources */,
+				7DD0D9E9267C96080030731E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E2BF1A82F5F8941C43C0101 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Popcorn Swirl/Pods-Popcorn Swirl-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Popcorn Swirl/Pods-Popcorn Swirl-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Popcorn Swirl/Pods-Popcorn Swirl-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F1644BD37EDEC31B1DA4599 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Popcorn Swirl-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7DD0D9DA267C96080030731E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DF3DE0B26948A4300AF1B79 /* BookmarkButton.swift in Sources */,
+				7D7791D92683685800174C90 /* DataManager.swift in Sources */,
+				7DBC1952268CC6E0006B816A /* FilmDetailInfoCell.swift in Sources */,
+				7D9ED4A326B1419200A727A7 /* NoteButton.swift in Sources */,
+				7DF3DE07269440D500AF1B79 /* FilmDetailButtonsCell.swift in Sources */,
+				7D7791DC26836EEE00174C90 /* FilmCollectionViewCell.swift in Sources */,
+				7DF3DE032693525700AF1B79 /* Date + FormattedString.swift in Sources */,
+				7D7791CB2683108400174C90 /* FilmListData.swift in Sources */,
+				7DBC1950268CB067006B816A /* JBKenBurnsView.swift in Sources */,
+				7DF59F4626B03BD5004227A5 /* AddNoteViewController.swift in Sources */,
+				7D51CFAB26B2A20800EDAA33 /* FilmDetailAdmobCell.swift in Sources */,
+				7DACAB062684A6D2002C6342 /* ImageService.swift in Sources */,
+				7DF3DE112696FE0400AF1B79 /* TmpFilm.swift in Sources */,
+				7D80382726A82DB4002B19AB /* Film+CoreDataClass.swift in Sources */,
+				7DF3DE092694828500AF1B79 /* EyeButton.swift in Sources */,
+				7D7791CF2683138800174C90 /* FilmListManager.swift in Sources */,
+				7DB7EA5126A4060C007F44D0 /* ChosenTableViewCell.swift in Sources */,
+				7D7791CD268310A900174C90 /* FilmListModel.swift in Sources */,
+				7DD0D9E2267C96080030731E /* AppDelegate.swift in Sources */,
+				7DBC194E268C8387006B816A /* FilmDetailArtworkCell.swift in Sources */,
+				7DD0D9E4267C96080030731E /* SceneDelegate.swift in Sources */,
+				7DBC702826A5C079009CC70E /* ChosenTableViewController.swift in Sources */,
+				7D655798268B1B0900436B80 /* FilmDetailViewController.swift in Sources */,
+				7D80382826A82DB4002B19AB /* Film+CoreDataProperties.swift in Sources */,
+				7D7791C32681D45C00174C90 /* FilmsViewController.swift in Sources */,
+				7DEA0D2126A628160030D26D /* DisplayFilms.swift in Sources */,
+				7DD0D9EC267C96080030731E /* Popcorn_Swirl.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7DD0D9E7267C96080030731E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DD0D9E8267C96080030731E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7DD0D9EF267C960B0030731E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DD0D9F0267C960B0030731E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7DD0D9F3267C960B0030731E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7DD0D9F4267C960B0030731E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7DD0D9F6267C960B0030731E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 211C268AC506566415108F98 /* Pods-Popcorn Swirl.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z395QVG78R;
+				INFOPLIST_FILE = "Popcorn Swirl/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jamestapping.Popcorn-Swirl";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7DD0D9F7267C960B0030731E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB2754E4DC7B55326FF2F609 /* Pods-Popcorn Swirl.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z395QVG78R;
+				INFOPLIST_FILE = "Popcorn Swirl/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jamestapping.Popcorn-Swirl";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7DD0D9D9267C96080030731E /* Build configuration list for PBXProject "Popcorn Swirl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DD0D9F3267C960B0030731E /* Debug */,
+				7DD0D9F4267C960B0030731E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DD0D9F5267C960B0030731E /* Build configuration list for PBXNativeTarget "Popcorn Swirl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DD0D9F6267C960B0030731E /* Debug */,
+				7DD0D9F7267C960B0030731E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7DD0D9EA267C96080030731E /* Popcorn_Swirl.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7DD0D9EB267C96080030731E /* Popcorn_Swirl.xcdatamodel */,
+			);
+			currentVersion = 7DD0D9EB267C96080030731E /* Popcorn_Swirl.xcdatamodel */;
+			path = Popcorn_Swirl.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7DD0D9D6267C96080030731E /* Project object */;
+}
