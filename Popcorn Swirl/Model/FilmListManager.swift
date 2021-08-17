@@ -8,6 +8,8 @@
 //
 // http://itunes.apple.com/lookup?id=1561316628
 // https://itunes.apple.com/search?term=2021&entity=movie&media=movie&attribut=releaseYearTerm
+//
+// See Constants.swift
 
 import Foundation
 
@@ -28,19 +30,15 @@ struct FilmListManager {
         return yearString
     }
     
-    let filmListURL = "https://itunes.apple.com/search?term=yyyy&entity=movie&media=movie&attribut=releaseYearTerm"
-    
-    let filmListLookup = "http://itunes.apple.com/lookup?id="
-    
     var delegate: FilmListManagerDelegate?
     
     func fetchFilmList(for trackId:Int) {
-        let urlString = "\(filmListLookup)\(trackId)"
+        let urlString = "\(Constants.filmListLookupURL)\(trackId)"
         performRequest(with: urlString)
     }
     
     func fetchFilmList() {
-        let urlString = "\(filmListURL)"
+        let urlString = "\(Constants.filmListURL)"
         let urlStringModifiedforYear = urlString.replacingOccurrences(of: "yyyy", with: currentYear)
         performRequest(with: urlStringModifiedforYear)
     }

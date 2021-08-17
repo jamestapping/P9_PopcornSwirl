@@ -211,7 +211,7 @@ extension FilmDetailViewController: GADBannerViewDelegate {
     
     func createBannerView() {
         gadBannerView = GADBannerView()
-        gadBannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        gadBannerView.adUnitID = Constants.adUnitID
         gadBannerView.rootViewController = self
         gadBannerView.delegate = self
         gadBannerView.backgroundColor = .clear
