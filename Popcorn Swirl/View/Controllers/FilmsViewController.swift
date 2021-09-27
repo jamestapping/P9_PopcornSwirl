@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Network
 
 class FilmsViewController: UIViewController {
     
@@ -20,6 +21,34 @@ class FilmsViewController: UIViewController {
     
     let nc = NotificationCenter.default
     
+    let nwCheck = NetworkCheck()
+
+    
+    var offLineToast: ToastView?
+    
+    var online = false {
+        didSet {
+            
+            guard online != oldValue else {
+                return
+            }
+            
+            if online == true {
+                print ("****** online observer says online state = True")
+
+                offLineToast?.hide(after: 0)
+                
+                setUpOfflineToast()
+                
+            } else {
+                print ("****** online observer says online = false")
+                
+                offLineToast?.show()
+
+            }
+        }
+    }
+    
     private let cache = NSCache<NSNumber, UIImage>()
     
     @IBOutlet weak var filmListCollectionView: UICollectionView!
@@ -31,6 +60,7 @@ class FilmsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         nc.addObserver(self, selector: #selector(reloadCollectionView), name: Notification.Name("reloadCollectionView"), object: nil)
         
@@ -44,6 +74,28 @@ class FilmsViewController: UIViewController {
         filmListCollectionView!.collectionViewLayout = layout
         filmListManager.delegate = self
         filmListManager.fetchFilmList()
+        
+        nwCheck.networkCheckDelegate = self
+        
+        setUpOfflineToast()
+        
+    }
+    
+
+    
+    func setUpOfflineToast() {
+        
+        DispatchQueue.main.async { [self] in
+            
+            offLineToast = ToastView(title: "Off-Line",
+                                          titleFont: .systemFont(ofSize: 15, weight: .semibold),
+                                          subtitle: "Please verify your network connection",
+                                          subtitleFont: .systemFont(ofSize: 12, weight: .light)
+                                          )
+            offLineToast?.willAutoHide = false
+            
+            
+        }
         
     }
 }
@@ -185,4 +237,30 @@ extension FilmsViewController: ButtonActionsDelegate {
         dataManager.updateFilm(id: Int64(filmId!), watched: watched, bookmarked: bookmarked)
     }
      
+}
+
+extension FilmsViewController: NetworkCheckDelegate {
+    
+    
+    func statusDidChange(status: NWPath.Status) {
+        
+        
+        switch status {
+        case .unsatisfied:
+            
+           online = false
+            
+            
+        default:
+            
+            online = true
+            
+            
+        }
+        
+    }
+    
+    
+    
+    
 }

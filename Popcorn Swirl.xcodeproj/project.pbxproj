@@ -26,6 +26,8 @@
 		7DBC1950268CB067006B816A /* JBKenBurnsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBC194F268CB067006B816A /* JBKenBurnsView.swift */; };
 		7DBC1952268CC6E0006B816A /* FilmDetailInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBC1951268CC6E0006B816A /* FilmDetailInfoCell.swift */; };
 		7DBC702826A5C079009CC70E /* ChosenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBC702726A5C078009CC70E /* ChosenTableViewController.swift */; };
+		7DCE4D2A2702002C00C12030 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCE4D292702002C00C12030 /* ToastView.swift */; };
+		7DCE4D2C270209DB00C12030 /* NetworkCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCE4D2B270209DB00C12030 /* NetworkCheck.swift */; };
 		7DD0D9E2267C96080030731E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD0D9E1267C96080030731E /* AppDelegate.swift */; };
 		7DD0D9E4267C96080030731E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD0D9E3267C96080030731E /* SceneDelegate.swift */; };
 		7DD0D9E9267C96080030731E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DD0D9E7267C96080030731E /* Main.storyboard */; };
@@ -62,6 +64,8 @@
 		7DBC194F268CB067006B816A /* JBKenBurnsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JBKenBurnsView.swift; sourceTree = "<group>"; };
 		7DBC1951268CC6E0006B816A /* FilmDetailInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailInfoCell.swift; sourceTree = "<group>"; };
 		7DBC702726A5C078009CC70E /* ChosenTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenTableViewController.swift; sourceTree = "<group>"; };
+		7DCE4D292702002C00C12030 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		7DCE4D2B270209DB00C12030 /* NetworkCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCheck.swift; sourceTree = "<group>"; };
 		7DD0D9DE267C96080030731E /* Popcorn Swirl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Popcorn Swirl.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DD0D9E1267C96080030731E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DD0D9E3267C96080030731E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,7 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				7D7791C22681D45C00174C90 /* FilmsViewController.swift */,
-				7D655797268B1B0900436B80 /* FilmDetailViewController.swift */,
 				7DBC702726A5C078009CC70E /* ChosenTableViewController.swift */,
 				7DF59F4526B03BD5004227A5 /* AddNoteViewController.swift */,
 			);
@@ -154,6 +157,9 @@
 			children = (
 				7DF3DE022693525700AF1B79 /* Date + FormattedString.swift */,
 				7DBC194F268CB067006B816A /* JBKenBurnsView.swift */,
+				7DCE4D2B270209DB00C12030 /* NetworkCheck.swift */,
+				7D655797268B1B0900436B80 /* FilmDetailViewController.swift */,
+				7DCE4D292702002C00C12030 /* ToastView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -356,6 +362,7 @@
 				7DB7EA5126A4060C007F44D0 /* ChosenTableViewCell.swift in Sources */,
 				7D7791CD268310A900174C90 /* FilmListModel.swift in Sources */,
 				7DD0D9E2267C96080030731E /* AppDelegate.swift in Sources */,
+				7DCE4D2A2702002C00C12030 /* ToastView.swift in Sources */,
 				7DBC194E268C8387006B816A /* FilmDetailArtworkCell.swift in Sources */,
 				7DD0D9E4267C96080030731E /* SceneDelegate.swift in Sources */,
 				7DBC702826A5C079009CC70E /* ChosenTableViewController.swift in Sources */,
@@ -363,6 +370,7 @@
 				7D80382826A82DB4002B19AB /* Film+CoreDataProperties.swift in Sources */,
 				7D7791C32681D45C00174C90 /* FilmsViewController.swift in Sources */,
 				7DEA0D2126A628160030D26D /* DisplayFilms.swift in Sources */,
+				7DCE4D2C270209DB00C12030 /* NetworkCheck.swift in Sources */,
 				7DD0D9EC267C96080030731E /* Popcorn_Swirl.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

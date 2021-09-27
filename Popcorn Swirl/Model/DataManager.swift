@@ -49,7 +49,7 @@ class DataManager {
                 
             } else {
                 
-                print("Fetch result was empty for filmId: \(String(describing: id))")
+                // print("Fetch result was empty for filmId: \(String(describing: id))")
                 
                 createNewFilm(id: id,watched: watched, bookmarked: bookmarked, note: "")
                 
@@ -78,7 +78,7 @@ class DataManager {
                 
             } else {
                 
-                print("Fetch result was empty for filmId: \(String(describing: id))")
+                // print("Fetch result was empty for filmId: \(String(describing: id))")
                 
                 let watched = false
                 let bookmarked = false
@@ -109,7 +109,7 @@ class DataManager {
                 
                 return tmpFilm!
                 
-            } else { print("Fetch result was empty for specified film id: \(String(describing: filmId))") }
+            } // else { print("Fetch result was empty for specified film id: \(String(describing: filmId))") }
             
         } catch { print("Fetch on film id: \(String(describing: filmId)) failed. \(error)") }
         
